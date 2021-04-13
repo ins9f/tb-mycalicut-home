@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&family=Poppins:wght@200;300&display=swap");
+
+html,
+body {
+  all: unset;
+  box-sizing: border-box;
+}
+
+section {
+  all: unset;
+}
+
+.top-header,
+.bottom-header {
+  height: auto;
+  width: 100%;
+}
+
+.top-header-flex,
+.bottom-header-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 20px;
+}
+
+.logo-container {
+  padding-top: 5px;
+}
+
+.logo-container:hover {
+  cursor: pointer;
+}
+
+.login,
+.cart,
+.nav-links,
+.bottom-header-right-links,
+.join-us-cta,
+.select-location,
+.search-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* login and cart styling */
+
+.login-cart-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 230px;
+}
+
+.login > a,
+.cart > a {
+  transition: 0.3s ease;
+  margin-left: 7px;
+}
+
+.login:hover,
+.cart:hover {
+  color: #cb385c;
+  cursor: pointer;
+}
+
+.login:hover #login-icon {
+  fill: #cb385c;
+}
+
+/* _________ */
+
+.nav-links-container {
+  width: 300px;
+}
+
+.bottom-header-right-links {
+  width: 600px;
+}
+
+/* SEARCH BAR */
+
+.search-bar {
+  width: 250px;
+  padding: 2px 12px;
+  border: 2px solid #130f26;
+  border-radius: 20px;
+}
+
+input[type="text"].search-input {
+  font-family: "Poppins", sans-serif;
+}
+
+.search-input {
+  font-size: 0.6em;
+  all: unset;
+  width: 90%;
+  color: #130f26;
+  outline: none;
+}
+
+.search-input::placeholder {
+  font-family: "Poppins", sans-serif;
+}
+
+/* ______ */
+
+.bottom-header {
+  background-color: #e1e7ec;
+}
+
+a:visited {
+  all: unset;
+}
+
+ul,
+li,
+a {
+  all: unset;
+  font-family: "Baloo 2", sans-serif;
+}
+
+svg {
+  display: inline-block;
+}
+
+h3,
+a.nav-link {
+  all: unset;
+  color: #130f26;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: "Baloo 2", sans-serif;
+  margin: 0 10px;
+}
+
+a.nav-link {
+  transition: 0.3s ease;
+}
+
+a.nav-link:hover {
+  color: #cb385c;
+  cursor: pointer;
+}
+
+button {
+  all: unset;
+  height: auto;
+  padding: 2px 15px;
+  border: 2px solid #cb385c;
+  border-radius: 40px;
+  background-color: #cb385c;
+  transition: 0.3s ease;
+  color: white;
+  font-size: 1em;
+  font-family: "Baloo 2", sans-serif;
+}
+
+#join-us-cta svg {
+  margin-left: 7px;
+}
+button#join-us-cta:hover {
+  background-color: white;
+  color: #cb385c;
+  cursor: pointer;
+}
+.join-us-chevron {
+  stroke: #fff;
+  transition: 0.3s ease;
+}
+button#join-us-cta:hover + #join-us-chevron {
+  stroke: #cb385c;
+}
+
+​button:active {
+  background-color: #cf0b3c;
+}
